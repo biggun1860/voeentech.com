@@ -54,14 +54,6 @@ const ProductPage = ({ data }) => {
                 </div>
               ))}
           </div>
-          <a
-            href={product.dealerUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="p-4 text-center font-medium rounded-md border-2 mt-4"
-          >
-            Shop Online
-          </a>
         </div>
       </div>
       <div className="my-6 mb-24">
@@ -93,7 +85,6 @@ export const query = graphql`
       description
       id
       price
-      dealerUrl
       image {
         localFile {
           publicURL

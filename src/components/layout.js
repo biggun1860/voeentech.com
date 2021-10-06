@@ -22,9 +22,9 @@ const Layout = ({ children }) => {
     <div className="bg-gray-50 relative">
       <Header
         setOpenModal={setOpenModal}
-        siteName={data.strapiGlobal.siteName || `Strapi`}
+        siteName={data.strapiGlobal.siteName || ""}
       />
-      <div className="flex flex-col max-w-screen-lg m-auto min-h-screen p-6 md:p-10">
+      <div className="flex flex-col max-w-screen-lg m-auto min-h-screen px-6 pt-20 md:px-10">
         <main className="flex-1">{children}</main>
         <Footer />
       </div>

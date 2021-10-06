@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `voeentech`,
+        short_name: `voeentech`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -37,7 +37,7 @@ module.exports = {
         apiURL: process.env.API_URL || `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
         collectionTypes: [`product`, `category`],
-        singleTypes: [`global`],
+        singleTypes: [`global`, `contact`],
       },
     },
     // You can have multiple instances of this plugin to create indexes with
