@@ -7,16 +7,16 @@ import ProductList from "~/components/product-list"
 import SEO from "~/components/seo"
 
 const CategoryPage = ({ data }) => {
-  const products = data.strapiCategory.products
+  const products = data.cloudBaseCategory.products
   const seo = {
-    title: data.strapiCategory.name,
+    title: data.cloudBaseCategory.name,
   }
 
   return (
     <Layout>
       <SEO seo={seo} />
       <div>
-        <PageHeading>{data.strapiCategory.name}</PageHeading>
+        <PageHeading>{data.cloudBaseCategory.name}</PageHeading>
         <ProductList products={products} />
       </div>
     </Layout>
@@ -25,7 +25,7 @@ const CategoryPage = ({ data }) => {
 
 export const query = graphql`
   query CategoryQuery($slug: String!) {
-    strapiCategory(slug: { eq: $slug }) {
+    cloudBaseCategory(slug: { eq: $slug }) {
       name
       products {
         title

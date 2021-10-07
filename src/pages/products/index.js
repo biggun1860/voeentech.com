@@ -8,7 +8,7 @@ import SEO from "~/components/seo"
 
 const SearchPage = ({
   data: {
-    allStrapiProduct: { edges },
+    allCloudBaseProduct: { edges },
   },
 }) => {
   const flatProducts = edges.map(({ node }) => node)
@@ -26,13 +26,10 @@ const SearchPage = ({
 
 export const searchPageQuery = graphql`
   query ProductSearchQuery {
-    allStrapiProduct {
+    allCloudBaseProduct {
       edges {
         node {
-          specifications {
-            key
-            value
-          }
+          specifications
           title
           price
           slug

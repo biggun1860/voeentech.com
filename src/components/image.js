@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const Image = ({ image, className, alt }) => {
   const data = useStaticQuery(graphql`
     query {
-      strapiGlobal {
+      cloudBaseGlobal {
         placeHolder {
           localFile {
             childImageSharp {
@@ -26,7 +26,7 @@ const Image = ({ image, className, alt }) => {
     return (
       <GatsbyImage
         className={className}
-        image={getImage(data.strapiGlobal.placeHolder.localFile)}
+        image={getImage(data.cloudBaseGlobal.placeHolder.localFile)}
         alt="Placeholder Image"
       />
     )

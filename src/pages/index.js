@@ -6,8 +6,8 @@ import SEO from "~/components/seo"
 import CategoryList from "~/components/category-list"
 import PageHeading from "~/components/styled/page-heading"
 
-const IndexPage = ({ data: { allStrapiCategory } }) => {
-  const categories = allStrapiCategory.edges
+const IndexPage = ({ data: { allCloudBaseCategory } }) => {
+  const categories = allCloudBaseCategory.edges
   const seo = { title: "Categories" }
   return (
     <Layout>
@@ -20,7 +20,7 @@ const IndexPage = ({ data: { allStrapiCategory } }) => {
 
 export const query = graphql`
   query CategoriesQuery {
-    allStrapiCategory {
+    allCloudBaseCategory {
       edges {
         node {
           name

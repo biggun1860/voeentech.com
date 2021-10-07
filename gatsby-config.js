@@ -2,6 +2,10 @@ require("dotenv").config({
   path: `.env`,
 })
 
+const cmsPrefix =
+  process.env.API_URL ||
+  `https://gatsby-demo-4gpgu8ji5fd0007e-1258471122.ap-guangzhou.service.tcloudbase.com/api/v1.0`
+
 module.exports = {
   flags: {
     DEV_SSR: false,
@@ -32,12 +36,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-strapi`,
+      resolve: `gatsby-source-multi-api`,
       options: {
-        apiURL: process.env.API_URL || `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        collectionTypes: [`product`, `category`],
-        singleTypes: [`global`, `contact`],
+        apis: [
+          {
+            prefix: `CloudBase`,
+            baseUrl: cmsPrefix,
+            endpoints: [`category`, `product`, `global`, `contact`]
+          },
+        ],
       },
     },
     // You can have multiple instances of this plugin to create indexes with
@@ -65,13 +72,10 @@ module.exports = {
         // required.
         query: `
           query {
-            allStrapiProduct {
+            allCloudBaseProduct {
               edges {
                 node {
-                  specifications {
-                    key
-                    value
-                  }
+                  specifications
                   id
                   title
                   price
@@ -105,7 +109,7 @@ module.exports = {
         // containing properties to index. The objects must contain the `ref`
         // field above (default: 'id'). This is required.
         normalizer: ({ data }) =>
-          data.allStrapiProduct.edges.map(({ node }) => {
+          data.allCloudBaseProduct.edges.map(({ node }) => {
             return {
               title: node.title,
               description: node.description,

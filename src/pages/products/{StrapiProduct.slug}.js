@@ -10,7 +10,7 @@ import Image from "~/components/image"
 import { formatPrice } from "~/helpers/currency-formatter"
 
 const ProductPage = ({ data }) => {
-  const product = data.strapiProduct
+  const product = data.cloudBaseProduct
 
   const seo = {
     title: product.title,
@@ -47,10 +47,12 @@ const ProductPage = ({ data }) => {
               product.specifications.map((spec, index) => (
                 <div
                   className="w-full flex text-sm justify-between items-between border-b mb-2 pb-1"
-                  key={`${spec.key}-${index}`}
+                  key={`${spec}-${index}`}
                 >
-                  <span className="font-extralight">{spec.key}</span>
-                  <span>{spec.value}</span>
+                  <span className="font-extralight">
+                    {spec.split(/:：/)[0]}
+                  </span>
+                  <span>{spec.split(/:：/)[1]}</span>
                 </div>
               ))}
           </div>
@@ -80,7 +82,7 @@ const ProductPage = ({ data }) => {
 
 export const query = graphql`
   query ProductQuery($slug: String!) {
-    strapiProduct(slug: { eq: $slug }) {
+    cloudBaseProduct(slug: { eq: $slug }) {
       title
       description
       id
@@ -97,10 +99,7 @@ export const query = graphql`
           }
         }
       }
-      specifications {
-        key
-        value
-      }
+      specifications
       relatedProducts {
         title
         price

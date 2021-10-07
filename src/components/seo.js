@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const SEO = ({ seo = {} }) => {
   const query = graphql`
     query {
-      strapiGlobal {
+      cloudBaseGlobal {
         siteName
         favicon {
           localFile {
@@ -25,8 +25,8 @@ const SEO = ({ seo = {} }) => {
       }
     }
   `
-  const { strapiGlobal } = useStaticQuery(query)
-  const { defaultSeo, siteName, favicon } = strapiGlobal
+  const { cloudBaseGlobal } = useStaticQuery(query)
+  const { defaultSeo, siteName, favicon } = cloudBaseGlobal
 
   // Merge default and page-specific SEO values
   const fullSeo = { ...defaultSeo, ...seo }
