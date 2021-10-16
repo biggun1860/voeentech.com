@@ -43,6 +43,9 @@ const ProductPage = ({ data }) => {
             )}
           </div>
           <div className="w-full">
+            {product.specifications && (
+              <h2 className="text-xl mb-1 border-b mb-2">Specifications</h2>
+            )}
             {product.specifications &&
               product.specifications.map((spec, index) => (
                 <div
@@ -50,9 +53,9 @@ const ProductPage = ({ data }) => {
                   key={`${spec}-${index}`}
                 >
                   <span className="font-extralight">
-                    {spec.split(/:：/)[0]}
+                    {spec.split(/[:：]/)[0]}
                   </span>
-                  <span>{spec.split(/:：/)[1]}</span>
+                  <span>{spec.split(/[:：]/)[1]}</span>
                 </div>
               ))}
           </div>
