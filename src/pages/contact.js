@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import Layout from "~/components/layout"
 import SEO from "~/components/seo"
 
-const IndexPage = ({ data: { cloudBaseContact } }) => {
+const ContactPage = ({ data: { cloudBaseContact } }) => {
   const seo = { title: "Categories" }
   return (
     <Layout>
@@ -26,4 +26,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default ContactPage

@@ -13,20 +13,19 @@ const SEO = ({ seo = {} }) => {
             publicURL
           }
         }
-        defaultSeo {
-          metaTitle
-          metaDescription
-          shareImage {
-            localFile {
-              publicURL
-            }
+        metaTitle
+        metaDescription
+        shareImage {
+          localFile {
+            publicURL
           }
         }
       }
     }
   `
   const { cloudBaseGlobal } = useStaticQuery(query)
-  const { defaultSeo, siteName, favicon } = cloudBaseGlobal
+  const { metaTitle, metaDescription, shareImage, siteName, favicon } = cloudBaseGlobal
+  const defaultSeo = { metaTitle, metaDescription, shareImage }
 
   // Merge default and page-specific SEO values
   const fullSeo = { ...defaultSeo, ...seo }

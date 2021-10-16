@@ -18,7 +18,7 @@
     "gatsby-plugin-react-helmet": "^4.3.0",
     "gatsby-plugin-sharp": "^3.6.0",
     "gatsby-source-filesystem": "^3.6.0",
-    "gatsby-source-multi-api": "^1.0.5",
+    "gatsby-source-cloudbase-cms": "^1.0.0",
     "gatsby-transformer-sharp": "^3.6.0",
     "global": "^4.4.0",
     "path-browserify": "^1.0.1",

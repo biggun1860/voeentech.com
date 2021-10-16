@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env`,
 })
 
-const cmsPrefix =
+const apiURL =
   process.env.API_URL ||
   `https://gatsby-demo-4gpgu8ji5fd0007e-1258471122.ap-guangzhou.service.tcloudbase.com/api/v1.0`
 
@@ -36,15 +36,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-multi-api`,
+      resolve: `gatsby-source-cloudbase-cms`,
       options: {
-        apis: [
-          {
-            prefix: `CloudBase`,
-            baseUrl: cmsPrefix,
-            endpoints: [`category`, `product`, `global`, `contact`]
-          },
-        ],
+        apiURL,
+        queryLimit: 1000,
+        collectionTypes: [`product`],
+        singleTypes: [`global`, `contact`],
       },
     },
     // You can have multiple instances of this plugin to create indexes with

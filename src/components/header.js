@@ -41,9 +41,6 @@ const Header = ({ setOpenModal }) => {
             onClick={() => setIsCollapsed(true)}
           >
             <Link className="m-2 text-white" to="/">
-              Categories
-            </Link>
-            <Link className="m-2 text-white" to="/products">
               Products
             </Link>
             <button
