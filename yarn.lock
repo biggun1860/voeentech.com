@@ -5620,10 +5620,10 @@ gatsby-recipes@^0.25.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-source-cloudbase-cms@^1.0.0:
-  version "1.0.0"
-  resolved "https://mirrors.tencent.com/npm/gatsby-source-cloudbase-cms/-/gatsby-source-cloudbase-cms-1.0.0.tgz#e03f14ae4a267ed770c3e85020c93e4411277730"
-  integrity sha512-YPne8xK+pq8yf45aTGRHgfbjtNwVz6LjkjExpY/R9+nRiNpof+yWqWX3pGzi8yNo0DT8fF/ar4FS3AfiCUusFA==
+gatsby-source-cloudbase-cms@^1.0.1:
+  version "1.0.1"
+  resolved "https://mirrors.tencent.com/npm/gatsby-source-cloudbase-cms/-/gatsby-source-cloudbase-cms-1.0.1.tgz#dbe882ab20353f0566981dd7d8f1654005fa944e"
+  integrity sha512-5+vHR47/62YSuFPuOz4xBMMIfBBwuFJhhiBGidVV6rbmOOHharCbuw4e2U9WtdCJ2M5Svsx0jIn0CsyV75nA2A==
   dependencies:
     axios "0.21.1"
     gatsby-node-helpers "0.3.0"

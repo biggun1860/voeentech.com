@@ -4,7 +4,10 @@ require("dotenv").config({
 
 const apiURL =
   process.env.API_URL ||
-  `https://gatsby-demo-4gpgu8ji5fd0007e-1258471122.ap-guangzhou.service.tcloudbase.com/api/v1.0`
+  `http://gatsby-demo-4gpgu8ji5fd0007e-1258471122.ap-guangzhou.service.tcloudbase.com/api/v1.0`
+const apiToken =
+  process.env.API_TOKEN ||
+  `EW_ENduN16X1DBoyCs8tR-FdVbOOF-uS-crzU7YozrcBXnJ-mqFzf5TkYmOtyLTAZ8wqEjKUPtpZLOO21_w9sjyScIpa9280fJqQTmOV9cazY9uqMms_FUWKYvlUawP7`
 
 module.exports = {
   flags: {
@@ -39,9 +42,13 @@ module.exports = {
       resolve: `gatsby-source-cloudbase-cms`,
       options: {
         apiURL,
+        apiToken,
         queryLimit: 1000,
         collectionTypes: [`product`],
         singleTypes: [`global`, `contact`],
+        // fetchOptions: {
+        //   proxy: { host: `127.0.0.1`, port: 8899 },
+        // },
       },
     },
     // You can have multiple instances of this plugin to create indexes with
