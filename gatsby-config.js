@@ -51,6 +51,19 @@ module.exports = {
         // },
       },
     },
+    {
+      resolve: "gatsby-plugin-content-hash",
+      options: { build_root_path: `${__dirname}/public` },
+    },
+    {
+      resolve: 'gatsby-plugin-gtag',
+      options: {
+        // your google analytics tracking id
+        trackingId: `G-40FNGLH6JS`,
+        // Puts tracking script in the head instead of the body
+        head: false,
+      },
+    },
     // You can have multiple instances of this plugin to create indexes with
     // different names or engines. For example, multi-lingual sites could create
     // an index for each language.
