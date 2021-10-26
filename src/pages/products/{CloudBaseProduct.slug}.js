@@ -35,7 +35,7 @@ const ProductPage = ({ data }) => {
         <div className={`flex flex-col justify-${flexJustify}`}>
           <div className="mb-4">
             <h1 className="text-4xl mb-1">{product.title}</h1>
-            {product.price && (
+            {product.price > 0 && (
               <div className="text-sm flex justify-between">
                 <p className="font-extralight">Price</p>
                 <p>{formatPrice(product.price)}</p>

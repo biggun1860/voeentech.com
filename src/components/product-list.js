@@ -22,7 +22,7 @@ const ProductList = ({ products, gridCols }) => {
               <div className="px-4 py-6">
                 <p>{product.title}</p>
                 <p className="text-xs self-end">
-                  {product.price && formatPrice(product.price)}
+                  {product.price > 0 && formatPrice(product.price)}
                 </p>
               </div>
             </Link>
