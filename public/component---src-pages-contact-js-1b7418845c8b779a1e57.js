@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvoeentech_frontend=self.webpackChunkvoeentech_frontend||[]).push([[501],{262:function(e,t,n){n.r(t);var a=n(7294),r=n(4248),c=n.n(r),o=n(3937),s=n(3751);t.default=function(e){var t=e.data.strapiContact;return a.createElement(o.Z,null,a.createElement(s.Z,{seo:{title:"Categories"}}),a.createElement(c(),{className:"prose md:w-4/5 mt-5 m-auto",children:t.description}))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-1b7418845c8b779a1e57.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvoeentech_frontend=self.webpackChunkvoeentech_frontend||[]).push([[774],{5029:function(e,t,n){n.r(t);var r=n(7294),a=n(3937),l=n(6877),c=n(1446),u=n(3751);t.default=function(e){var t=e.data,n=t.strapiCategory.products,o={title:t.strapiCategory.name};return r.createElement(a.Z,null,r.createElement(u.Z,{seo:o}),r.createElement("div",null,r.createElement(l.Z,null,t.strapiCategory.name),r.createElement(c.Z,{products:n})))}}}]);
+//# sourceMappingURL=component---src-pages-categories-strapi-category-slug-js-b0dfbc35bd7045ee3064.js.map

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-contact-js",
     "path": "/contact/",
-    "result": {"data":{"cloudBaseContact":{"description":"# CONTACT US\n\nFor more information, please feel free to send an emai to sales@voeentech.com or call ben directly.\nMore details coming soon...\n\n"}},"pageContext":{}},
-    "staticQueryHashes": ["1049317763","2628218426","3315230702","3321044848"]}
+    "result": {"data":{"cloudBaseContact":{"content":"### Voenn Technology (HK) Limited\n\n- Location: 29/F, Chuangzhan Center, 6007, Shennan Avenue, Futian District, Shenzhen,P.R.China\n- Tel: +86 755-82737954\n- Email: Sales@voeen.com\n\n"}},"pageContext":{}},
+    "staticQueryHashes": ["1049317763","1902885665","2628218426","3315230702","3321044848"]}

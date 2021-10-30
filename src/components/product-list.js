@@ -5,8 +5,6 @@ import PropTypes from "prop-types"
 import Card from "~/components/styled/card"
 import Image from "~/components/image"
 
-import { formatPrice } from "~/helpers/currency-formatter"
-
 const ProductList = ({ products, gridCols }) => {
   return (
     <div className={`grid ${gridCols} gap-6`}>
@@ -21,9 +19,6 @@ const ProductList = ({ products, gridCols }) => {
               />
               <div className="px-4 py-6">
                 <p>{product.title}</p>
-                <p className="text-xs self-end">
-                  {product.price > 0 && formatPrice(product.price)}
-                </p>
               </div>
             </Link>
           </Card>
@@ -39,7 +34,7 @@ ProductList.propTypes = {
 }
 
 ProductList.defaultProps = {
-  gridCols: "grid-cols-1 md:grid-cols-3",
+  gridCols: "grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
 }
 
 export default ProductList

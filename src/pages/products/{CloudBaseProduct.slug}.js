@@ -7,8 +7,6 @@ import ProductList from "~/components/product-list"
 import SEO from "~/components/seo"
 import Image from "~/components/image"
 
-import { formatPrice } from "~/helpers/currency-formatter"
-
 const ProductPage = ({ data }) => {
   const product = data.cloudBaseProduct
 
@@ -35,12 +33,6 @@ const ProductPage = ({ data }) => {
         <div className={`flex flex-col justify-${flexJustify}`}>
           <div className="mb-4">
             <h1 className="text-4xl mb-1">{product.title}</h1>
-            {product.price > 0 && (
-              <div className="text-sm flex justify-between">
-                <p className="font-extralight">Price</p>
-                <p>{formatPrice(product.price)}</p>
-              </div>
-            )}
           </div>
           <div className="w-full">
             {product.specifications && (
@@ -89,7 +81,6 @@ export const query = graphql`
       title
       description
       id
-      price
       image {
         localFile {
           publicURL
@@ -105,7 +96,6 @@ export const query = graphql`
       specifications
       relatedProducts {
         title
-        price
         id
         slug
         image {

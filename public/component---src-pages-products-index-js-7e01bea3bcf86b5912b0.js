@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvoeentech_frontend=self.webpackChunkvoeentech_frontend||[]).push([[776],{7739:function(e,t,n){n.r(t);var r=n(7294),c=n(3937),u=n(6877),a=n(1446),l=n(3751);t.default=function(e){var t=e.data.allStrapiProduct.edges.map((function(e){return e.node}));return r.createElement(c.Z,null,r.createElement(l.Z,{seo:{title:"Products"}}),r.createElement(u.Z,null,"Products"),r.createElement(a.Z,{products:t}))}}}]);
+//# sourceMappingURL=component---src-pages-products-index-js-7e01bea3bcf86b5912b0.js.map

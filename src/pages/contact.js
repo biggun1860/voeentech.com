@@ -12,7 +12,7 @@ const ContactPage = ({ data: { cloudBaseContact } }) => {
       <SEO seo={seo} />
       <ReactMarkdown
         className="prose md:w-4/5 mt-5 m-auto"
-        children={cloudBaseContact.description}
+        children={cloudBaseContact.content}
       />
     </Layout>
   )
@@ -21,7 +21,7 @@ const ContactPage = ({ data: { cloudBaseContact } }) => {
 export const query = graphql`
   query ContactQuery {
     cloudBaseContact {
-      description
+      content
     }
   }
 `

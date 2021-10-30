@@ -44,8 +44,8 @@ module.exports = {
         apiURL,
         apiToken,
         queryLimit: 1000,
-        collectionTypes: [`product`],
-        singleTypes: [`global`, `contact`],
+        collectionTypes: [`product`, `news`],
+        singleTypes: [`global`, `home`, `contact`],
         // fetchOptions: {
         //   proxy: { host: `127.0.0.1`, port: 8899 },
         // },
@@ -95,7 +95,6 @@ module.exports = {
                   specifications
                   id
                   title
-                  price
                   slug
                   description
                   image {
@@ -120,7 +119,7 @@ module.exports = {
         // List of keys to store and make available in your UI. The values of
         // the keys are taken from the normalizer function below.
         // Default: all fields
-        store: ["slug", "title", "description", "image", "id", "price"],
+        store: ["slug", "title", "description", "image", "id"],
         // Function used to map the result from the GraphQL query. This should
         // return an array of items to index in the form of flat objects
         // containing properties to index. The objects must contain the `ref`
@@ -133,7 +132,6 @@ module.exports = {
               slug: node.slug,
               image: node.image,
               id: node.id,
-              price: node.price,
             }
           }),
       },

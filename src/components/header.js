@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-const Header = ({ setOpenModal }) => {
+const Header = () => {
   const [isCollapsed, setIsCollapsed] = useState(true)
   const toggleVisibility = () => {
     setIsCollapsed(!isCollapsed)
@@ -40,17 +40,14 @@ const Header = ({ setOpenModal }) => {
             }`}
             onClick={() => setIsCollapsed(true)}
           >
-            <Link className="m-2 text-white" to="/">
-              Products
+            <Link className="m-2 text-white" to="/products">
+              PRODUCTS
             </Link>
-            <button
-              className="m-2 text-white text-left"
-              onClick={() => setOpenModal(true)}
-            >
-              Search
-            </button>
+            <Link className="m-2 text-white" to="/news">
+              NEWS
+            </Link>
             <Link className="m-2 text-white" to="/contact">
-              Contact us
+              CONTACTS
             </Link>
           </div>
         </div>
