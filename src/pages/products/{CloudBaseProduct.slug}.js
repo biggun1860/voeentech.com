@@ -65,10 +65,7 @@ const ProductPage = ({ data }) => {
         <div className="flex flex-col my-6 mb-24">
           <h2 className="text-3xl font-bold text-center">Related Products</h2>
           <hr className="mt-6 mb-12 m-auto w-24 border-t-4" />
-          <ProductList
-            products={product.relatedProducts}
-            gridCols="grid-cols-1 md:grid-cols-2"
-          />
+          <ProductList products={product.relatedProducts} />
         </div>
       )}
     </Layout>
