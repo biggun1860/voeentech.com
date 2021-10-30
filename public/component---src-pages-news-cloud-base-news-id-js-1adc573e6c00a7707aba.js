@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvoeentech_frontend=self.webpackChunkvoeentech_frontend||[]).push([[243],{2895:function(e,t,n){n.r(t);var a=n(7294),c=n(4248),l=n.n(c),r=n(3937),o=n(3751);t.default=function(e){var t=e.data.cloudBaseNews,n={title:t.title};return a.createElement(r.Z,null,a.createElement(o.Z,{seo:n}),a.createElement(l(),{className:"prose md:w-4/5 mt-5 m-auto",children:t.content}))}}}]);
+//# sourceMappingURL=component---src-pages-news-cloud-base-news-id-js-1adc573e6c00a7707aba.js.map
