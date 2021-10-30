@@ -12,7 +12,7 @@ const NewsList = ({ newsList, gridCols }) => {
     <div className={`grid ${gridCols} gap-1 mb-10`}>
       {newsList.map(news => {
         return (
-          <div className="mb-1 shadow-lg bg-white rounded-md">
+          <div key={news.id} className="mb-1 shadow-lg bg-white rounded-md">
             <Link to={`/news/${newsSlug(news.id)}`} key={news.id}>
               <div className="px-4 py-6">
                 <p>
