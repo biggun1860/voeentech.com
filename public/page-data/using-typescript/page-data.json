@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-using-typescript-tsx",
     "path": "/using-typescript/",
     "result": {"data":{"site":{"buildTime":"2021-10-30 10:24 am UTC"}},"pageContext":{}},
-    "staticQueryHashes": ["1049317763","1902885665","2628218426","3315230702","3321044848"]}
+    "staticQueryHashes": ["1902885665","2628218426","3315230702"]}

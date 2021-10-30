@@ -25,7 +25,7 @@ const IndexPage = ({
     <Layout>
       <SEO seo={seo} />
       <PageHeading>ABOUT US</PageHeading>
-      <ReactMarkdown className="mb-10" children={cloudBaseHome.about} />
+      <ReactMarkdown className="mb-5" children={cloudBaseHome.about} />
       <PageHeading>HOT PRODUCTS</PageHeading>
       <MoreLink to="/products" />
       <ProductList products={cloudBaseHome.hotProducts} />

@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-news-index-js",
     "path": "/news/",
     "result": {"data":{"allCloudBaseNews":{"edges":[{"node":{"id":"News_62f0cd86617cf68b000255d53537469a","title":"Convergence India 2020","updatedAt":1635579531818}},{"node":{"id":"News_62f0cd86617d10be00025bf27a866eb5","title":"IBC 2020","updatedAt":1635586238045}}]}},"pageContext":{}},
-    "staticQueryHashes": ["1049317763","1902885665","2628218426","3315230702","3321044848"]}
+    "staticQueryHashes": ["1902885665","2628218426","3315230702"]}

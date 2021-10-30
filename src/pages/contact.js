@@ -6,7 +6,7 @@ import Layout from "~/components/layout"
 import SEO from "~/components/seo"
 
 const ContactPage = ({ data: { cloudBaseContact } }) => {
-  const seo = { title: "Categories" }
+  const seo = { title: "Contact" }
   return (
     <Layout>
       <SEO seo={seo} />

@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-news-cloud-base-news-id-js",
     "path": "/news/news-62f0cd86617d10be00025bf27a866eb5/",
     "result": {"data":{"cloudBaseNews":{"id":"News_62f0cd86617d10be00025bf27a866eb5","title":"IBC 2020","content":"IBC 2020\n\n11 - 15 September 2020\n\nRai Amsterdam\n\nBooth No.: Hall 5-A41b\n\n","updatedAt":1635586238045}},"pageContext":{"id":"News_62f0cd86617d10be00025bf27a866eb5","__params":{"id":"news-62f0cd86617d10be00025bf27a866eb5"}}},
-    "staticQueryHashes": ["1049317763","1902885665","2628218426","3315230702","3321044848"]}
+    "staticQueryHashes": ["1902885665","2628218426","3315230702"]}
